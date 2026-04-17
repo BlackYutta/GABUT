@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(to right, #eef2f5, #dfe9f3);
+      color: #333;
+    }
+
+    /* TOPBAR */
+    .topbar {
+      background: #f8d84c;
+      text-align: center;
+      padding: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* HEADER */
+    header {
+      padding: 70px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #1abc9c, #16a085);
+      color: #fff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.7;
+      opacity: 0.95;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: #2c3e50;
+      padding: 12px;
+    }
+
+    .navbar a {
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      background: #1abc9c;
+      transform: scale(1.05);
+    }
+
+    /* WRAPPER */
+    .page-wrap {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    /* CONTAINER */
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* CARD */
+    .side,
+    .main {
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    .side:hover,
+    .main:hover {
+      transform: translateY(-6px);
+    }
+
+    .side {
+      flex: 1 1 320px;
+    }
+
+    .main {
+      flex: 2 1 600px;
+    }
+
+    /* TEXT */
+    h2 {
+      color: #1abc9c;
+      margin-bottom: 5px;
+    }
+
+    h5 {
+      color: #777;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    /* IMAGE */
+    .profile-img,
+    .content-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 15px 0;
+      transition: 0.3s;
+    }
+
+    .profile-img:hover,
+    .content-img:hover {
+      transform: scale(1.03);
+    }
+
+    /* SOCIAL */
+    .social {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .social a {
+      margin: 0 10px;
+    }
+
+    .social img {
+      width: 48px;
+      transition: 0.3s;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* RESPONSIVE */
+    @media screen and (max-width: 860px) {
+      .container {
+        flex-direction: column;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    Sedang Iseng Bikin Website🚀
+  </div>
+
+  <header>
+    <h1>Welcome MBG (MY BEUTIFUL GIRL) ✨</h1>
+    <p>Tempat kecil untuk berbagi cerita, aktivitas, dan hal yang saya sukai 🚀</p>
+  </header>
+
+  <div class="navbar">
+    <a href="https://github.com/BlackYutta" target="_blank">GitHub</a>
+    <a href="https://www.instagram.com/xvael_" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@nnayutta" target="_blank">TikTok</a>
+    <a href="#">Home</a>
+  </div>
+
+  <div class="page-wrap">
+    <div class="container">
+
+      <div class="side">
+        <h2>About Me</h2>
+        <h5>My Profile</h5>
+
+        <img src="gambar/yss.jpg" class="profile-img">
+
+        <p>
+          Saya adalah mahasiswa informatika yang memiliki minat di dunia teknologi, desain, dan media sosial.
+          Saya senang berbagi pengalaman serta hal-hal menarik yang saya temui setiap hari.
+        </p>
+
+        <h3>Follow Me</h3>
+        <p>Yuk terhubung dengan saya di sosial media 👇</p>
+
+        <div class="social">
+          <a href="https://github.com/BlackYutta" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+          </a>
+          <a href="https://www.instagram.com/xvael_" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+          </a>
+          <a href="https://www.tiktok.com/@nnayutta" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png">
+          </a>
+        </div>
+      </div>
+
+      <div class="main">
+        <h2>MY CONTENT</h2>
+        <h5>History Mobile Legend</h5>
+
+        <img src="gambar/history.jpg" class="content-img">
+
+        <p>
+          Ini adalah salah satu aktivitas terbaru saya, yaitu bermain Mobile Legends.
+          Kalau ada yang mau mabar, ayo mabar id saya 131755764 🔥
+        </p>
+
+        <h2>ANOTHER POST</h2>
+        <h5>History Rank Saya</h5>
+
+        <img src="gambar/haigrank.jpg" class="content-img">
+
+        <p>
+          Terima kasih sudah mampir ke website sederhana ini.
+          Semoga apa yang saya bagikan bisa menghibur atau bahkan jadi teman mabar 😎
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <h2>Contact Me</h2>
+    <p>Terima kasih sudah berkunjung 💙 Jangan lupa follow sosial media saya ya!</p>
+  </footer>
+
+</body>
+</html>
+
